@@ -28,7 +28,8 @@ int light = 3;
 int time = 100;
 int count = 1;
 
-void loop(){
+void loop()
+{
     for(light = 3 ; light <= 13 ; light++){ //ไฟไล่ขึ้นไป
         if(light == 8){
             digitalWrite(light,0);

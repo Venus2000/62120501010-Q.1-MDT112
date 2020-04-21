@@ -29,8 +29,7 @@ int time = 100;
 int count = 1;
 
 void loop(){
-    for(light = 3 ; light <= 13 ; light++)
-    { //ไฟไล่ขึ้นไป
+    for(light = 3 ; light <= 13 ; light++){ //ไฟไล่ขึ้นไป
         if(light == 8){
             digitalWrite(light,0);
             continue;
@@ -53,7 +52,7 @@ void loop(){
         }
 
     }
-    for(light = 13 ; light >= 3 ; light--)
+    for(light = 13 ; light >= 3 ; light--) // ไฟไล่ลง
     {
         if(light == 8){
             digitalWrite(light,0); // trun off L8
